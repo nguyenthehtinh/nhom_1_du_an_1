@@ -9,7 +9,7 @@ class HomeController
     public function __construct()
     {
         $this->modelSanPham = new SanPhams();
-        $this->tinTucModel = new TinTuc();
+//       $this->tinTucModel = new TinTuc();
 
     }
 
@@ -21,7 +21,7 @@ class HomeController
     public function home()
     {
         $listSanPham = $this->modelSanPham->getAllSanPham();
-        $tinTucs = $this->tinTucModel->getAllTinTuc();
+//        $tinTucs = $this->tinTucModel->getAllTinTuc();
         $listSanPhamYeuThich = $this->modelSanPham->getSPYeuThich();
         require_once './views/home.php';
     }
